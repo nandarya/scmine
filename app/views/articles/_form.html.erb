@@ -8,5 +8,8 @@
     <%= f.label :content %><br />
     <%= f.text_field :content %>
   </p>
+	<p>
+		<%= f.radio_button :published, { }, "Yes", "No" %>
+	</p>
   <p><%= f.submit "Submit" %></p>
 <% end %>
