@@ -1,4 +1,6 @@
 class ReplaysController < ApplicationController
+  uses_tiny_mce
+  
   def index
     @replays = Replay.all
   end
