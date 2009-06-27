@@ -9,11 +9,11 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090627142118) do
+ActiveRecord::Schema.define(:version => 20090627175755) do
 
   create_table "articles", :force => true do |t|
     t.string   "headline"
-    t.string   "content"
+    t.text     "content",    :limit => 255
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "user_id"
