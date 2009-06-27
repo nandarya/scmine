@@ -1,6 +1,8 @@
 class ArticlesController < ApplicationController
+  include UsersHelper
+  
   def index
-    @articles = Article.all
+      @articles = Article.all()
   end
   
   def show
