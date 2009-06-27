@@ -1,4 +1,6 @@
 class ArticlesController < ApplicationController
+  uses_tiny_mce
+  
   def index
     @articles = Article.all
   end

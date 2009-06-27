@@ -1,0 +1,16 @@
+<% title "Replay" %>
+
+<p>
+  <strong>Name:</strong>
+  <%=h @replay.name %>
+</p>
+<p>
+  <strong>Description:</strong>
+  <%=h @replay.description %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_replay_path(@replay) %> |
+  <%= link_to "Destroy", @replay, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", replays_path %>
+</p>

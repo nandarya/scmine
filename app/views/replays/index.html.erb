@@ -1,0 +1,20 @@
+<% title "Replays" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>User</th>
+  </tr>
+  <% for replay in @replays %>
+    <tr>
+      <td><%=h replay.name %></td>
+      <td><%=h replay.description %></td>
+      <td><%= link_to "Show", replay %></td>
+      <td><%= link_to "Edit", edit_replay_path(replay) %></td>
+      <td><%= link_to "Destroy", replay, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Replay", new_replay_path %></p>
