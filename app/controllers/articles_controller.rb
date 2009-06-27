@@ -1,8 +1,9 @@
 class ArticlesController < ApplicationController
   uses_tiny_mce
+  include UsersHelper
   
   def index
-    @articles = Article.all
+      @articles = Article.all()
   end
   
   def show
