@@ -9,11 +9,16 @@
   </head>
   <body>
     <div id="container">
-			<%= render :partial => "layouts/user_navigation" %>
+	
+			<div id="header">
+				<%= render :partial => "layouts/user_navigation" %>
+			</div>
 			
-			<div id="latest_replays">
-				<h3>Latest Replays</h3>
-				<%= render :partial => "layouts/replay_list_item", :collection => Replay.all, :as => :replay %>
+			<div id="left_content">
+				<div id="latest_replays">
+					<h3>Latest Replays</h3>
+					<%= render :partial => "replays/replay_list_item", :collection => Replay.all, :as => :replay %>
+				</div>
 			</div>
 	
 			<div id="content">

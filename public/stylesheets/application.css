@@ -18,14 +18,7 @@ a {
   overflow: hidden;
 }
 
-#container {
-  width: 75%;
-  margin: 0 auto;
-  background-color: #FFF;
-  padding: 20px 40px;
-  border: solid 1px black;
-  margin-top: 20px;
-}
+
 
 #flash_notice, #flash_error {
   padding: 5px 8px;
@@ -80,17 +73,23 @@ a {
   list-style: disc;
 }
 
-#user_nav {
-	float: right;
-	font-size: 12px;
+#container {
+  width: 75%;
+  margin: 0 auto;
+  background-color: #FFF;
+  padding: 20px 40px;
+  border: solid 1px black;
+  margin-top: 20px;
 }
 
-#content {
-	float: left;
-}
+	#header { height: 100px; }
+		#user_nav { float: right; font-size: 12px; }
 
-#latest_replays {
-	float: left;
-	width: 150px;
-	background-color: #fff;
-}
+	#content { float: left; }
+
+	#left_content {
+		float: left;
+		width: 150px;
+		background-color: #fff;
+		padding-top: 55px;
+	}
