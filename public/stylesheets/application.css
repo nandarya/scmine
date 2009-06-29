@@ -84,3 +84,13 @@ a {
 	float: right;
 	font-size: 12px;
 }
+
+#content {
+	float: left;
+}
+
+#latest_replays {
+	float: left;
+	width: 150px;
+	background-color: #fff;
+}
