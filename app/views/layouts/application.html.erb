@@ -21,9 +21,7 @@
       
       <%= yield %>
 
-			<%- for replay in Replay.all %>
-				<p><%= replay.name %></p>
-			<%- end%>
+			<%= render :partial => "layouts/small_replay_box", :collection => Replay.all, :as => :replay %>
     </div>
   </body>
 </html>
