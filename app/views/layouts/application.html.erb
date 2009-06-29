@@ -20,6 +20,10 @@
       <%- end -%>
       
       <%= yield %>
+
+			<%- for replay in Replay.all %>
+				<p><%= replay.name %></p>
+			<%- end%>
     </div>
   </body>
 </html>
